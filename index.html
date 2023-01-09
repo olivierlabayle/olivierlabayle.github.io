@@ -18,9 +18,9 @@
 				<ul class="container">
 					<li><a href="#top">About</a></li>
 					<li><a href="#work">Research</a></li>
-					<li><a href="resume/resume.html">Resume</a></li>
-					<li><a href="https://www.linkedin.com/in/olivierlabayle/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/olivierlabayle" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="resume/resume.html" target="_blank">Resume</a></li>
+					<li><a href="https://www.linkedin.com/in/olivierlabayle/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/olivierlabayle" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
 				</ul>
 			</nav>
 
@@ -29,13 +29,15 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/mypicture.jpg" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
-								<h1>Hi. I'm <strong>Olivier Labayle</strong>.</h1>
+								<h1>Olivier Labayle</h1>
 							</header>
-							<p>I'm a PhD student in the Biomedical AI CDT program at the University of Edinburgh. </p>
+							<p>I'm a PhD student in the Biomedical AI CDT program at the University of Edinburgh. In my current work I 
+								leverage the framework of Targeted Learning to uncover the mechanics of diseases using 
+								biobank scale data.</p>
 						</div>
 					</div>
 				</div>
@@ -45,27 +47,30 @@
 			<article id="work" class="wrapper style2">
 				<div class="container">
 					<header>
-						<h2>Research work.</h2>
-						<p>I am a Biomedical AI CDT program PhD student at the University of Edinburgh, part of the 
-							<a href="https://edbiomed.ai/" target="_blank">EdBiomedAI</a> lab.
-							My current work aims at leveraging modern methods from causal inference, 
-							targeted-learning and functional genetics to uncover the mechanics of diseases using 
-							biobank scale data. Since I am also an engineer, I like to design new tools, <a href="https://github.com/TARGENE" target="_blank">TarGene</a> 
-							is my attempt to provide the geneticist community with a software implementing the methods we co-develop in the lab.</p>
+						<h2>PhD: A targeted approach to population genetics.</h2>
+						<p align="justify">My PhD project is set at the intersection of causal inference, 
+							machine-learning and functional genetics. The originality of our work consists in two main propositions. 
+							The first is statistical, we use the modern framework of Targeted Learning developed by van der Laan et al., 
+							which is supported by asymptotic theoretical guarantees particularly well suited to modern biobanks. If you are interested 
+							in the details of the method, our preprint is available <a href="https://www.biorxiv.org/content/10.1101/2022.09.12.507656v1" target="_blank">here</a>.
+							The second is a strong emphasis on functional genetics that will enable the resulting statistical estimates to be associated with a causal biological interpretation.  
+							To make this project practically possible, I develop a Julia package for general purpose Targeted Minimum Loss-based Estimation and a Nextflow pipeline called TarGene. 
+							Those two softwares are completely open source and accessible below:
 					</header>
+					
 					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
-								<span class="icon featured fa-comments"></span>
-								<h3>TarGene</h3>
-								<p>The software I develop to estimate effect sizes of genetic variants on diseases using Biobank scale data.</p>
+								<img src="images/targene_logo.png" width="150" height="150">
+								<h3><a href="https://targene.github.io/targene-pipeline/stable/" target="_blank">TarGene</a></h3>
+								<p>A Nextflow pipeline to estimate effect sizes of genetic variants on diseases using Biobank scale data.</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
-								<span class="icon solid featured fa-camera-retro"></span>
-								<h3>TMLE</h3>
-								<p>A tutorial on Targeted Minimum Loss-based Estimation via TMLE.jl</p>
+								<img src="images/tmle_logo.svg" width="150" height="150">
+								<h3><a href="https://olivierlabayle.github.io/TMLE.jl/stable/" target="_blank">TMLE.jl</a></h3>
+								<p>A general purpose Julia package for Targeted Minimum Loss-based Estimation.</p>
 							</section>
 						</div>
 					</div>
